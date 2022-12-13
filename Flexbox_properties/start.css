@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#yellow {
+    order: 0;
+  }
+
+  #red {
+    order: 1;
+  }
+
+#green {
+    order: 2;
+  }
+  
+  #orange {
+    order: 3;
+    flex-basis: 500px;
+  }
+
+  #blue {
+    order: 4;
+  }
