@@ -1,0 +1,81 @@
+@font-face {
+    font-family: DontStarveNameFont;
+    src: url(OctoberCrow.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: DontStarveNameFont;
+    font-size: 20px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    
+    background: linear-gradient( antiquewhite, rosybrown);
+    border-right: 2px solid  #2b2b2b;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+div{
+    padding-left: 5px;
+}
+
+img[alt="logo image"]{
+    width: 170px;
+    height: auto;
+    margin-top: 3vw;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+li{
+    list-style: circle;
+}
+
+a{
+    color: #2b2b2b;
+    text-decoration: none;
+    padding-top:2px;
+    padding-bottom: 2px;;
+
+    border-top: 1.5px solid #2b2b2b;
+    border-bottom: 1.5px solid #2b2b2b;
+}
+
+a:hover{
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.links{
+    flex: 1;
+}
+
+img[alt="avatar"]{
+    width: 140px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+    gap: 1ch;
+}
+
