@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "verde verde verde"
+        "giallo rosso blu"
+        "arancio arancio blu";
+}
+
+#green {
+    grid-area: verde;
+}
+  
+#orange {
+    grid-area: arancio;
+}
+  
+#yellow {
+    grid-area: giallo;
+}
+  
+#red {
+    grid-area: rosso;
+}
+  
+#blue {
+    grid-area: blu;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
