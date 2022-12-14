@@ -1,0 +1,65 @@
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+body{
+    font-family: roboto ;
+    font-size: 26px;
+}
+
+.calcolatrice{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5px;
+    width: 400px;
+    height: 400px;
+    
+    background-color: rgb(168, 168, 172);
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+}
+
+.result{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+
+    grid-column: span 4;
+ 
+    background-color: rgb(73, 78, 87);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.equals{
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+
+    grid-column-start: 4;
+    grid-row-start: 7;
+    grid-row-end: 3;
+
+    background-color: rgb(250, 116, 116);
+    border-radius: 0px 0px 10px 0px;
+}
+
+.numb, .operators{
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+.numb{
+    background-color: ghostwhite;
+}
+
+.operators{
+    background-color: gainsboro;
+}
+
+.calcolatrice > div:nth-child(15){
+    border-radius: 0px 0px 0px 10px;
+}
