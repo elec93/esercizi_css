@@ -1,0 +1,134 @@
+@font-face {
+    font-family: disney;
+    src: url(NewWaltDisneyFontRegular-BPen.ttf); 
+}
+@font-face {
+    font-family: stanberry;
+    src: url(Stanberry.ttf);
+}
+
+*{  margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top:100px;
+}
+
+div.card{
+    background-image: linear-gradient(rgb(49, 115, 231), #bec6f3);
+    box-shadow: 1px 1px 10px rgb(91, 91, 91);
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    height: 450px;
+}
+
+.container div.card:nth-child(2){
+    background-image: linear-gradient(rgb(232, 78, 198), rgb(243, 190, 235));
+}
+.container div.card:nth-child(3){
+    background-image: linear-gradient(rgb(239, 169, 18), rgb(255, 234, 195));
+}
+
+/* ______top_section_______*/
+section.top{ 
+    display: flex;
+    height: 50px;    
+}
+
+img[alt="white-dot"]{
+    padding: 5px;
+    width: 40px ;
+    height: 40px ;  
+    opacity: 0.3; 
+}
+
+div.txt{
+    align-self: center;
+    flex: 1;
+    font-family: disney;
+}
+
+div.txt p{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 24px;
+}
+span.data{
+    color: white;
+    font-size: 16px;
+}
+
+/* dot menù */
+.dot-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 3px;    
+}
+.dot-menu span{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);  
+}
+
+/* ______mid_section_______*/
+section.mid-img{ 
+    width: 300px;
+    height: 250px; 
+    overflow: hidden;   
+}
+
+img[alt="prtrait"]{ 
+    width: 300px; 
+    object-fit: contain;
+}
+
+/* ______bott_section_______*/
+section.icons{
+    display: flex;
+    gap: 10px;
+    margin: 7px 20px;
+    width: 20px;
+}
+
+section.bott-txt{
+    text-align: justify;
+    margin: 0px 10px 40px 10px;
+    font-size: 14px;
+    font-family: stanberry;
+}
+
+section.bott-txt span{
+    font-weight: bold;
+}
+
+/* ______responsive_______*/
+@media(max-width: 768px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 60px ;
+        margin-right:60px ;      
+        } 
+}
+
+@media(max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        } 
+}
+
+
